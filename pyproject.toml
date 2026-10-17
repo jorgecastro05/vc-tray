@@ -1,0 +1,15 @@
+[project]
+name = "vc-tray"
+version = "0.1.0"
+description = "Record the voice changer's PipeWire sink with a hotkey, with a KDE/Linux tray indicator"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyQt6>=6.5"]
+
+[project.scripts]
+vc-tray = "vc_tray.tray:main"
+vc-record = "vc_tray.record:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
